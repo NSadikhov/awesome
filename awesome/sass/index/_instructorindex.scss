@@ -1,0 +1,394 @@
+#instructor {
+    color: #29293a;
+    background: #f3f3f9;
+    padding-top: 145px;
+    padding-bottom: 197px;
+    font-family: $fontfamily;
+
+    .container {
+        text-align: center;
+
+        .header {
+            h1 {
+                font-size: 3.5em;
+                font-weight: bold;
+                letter-spacing: -3px;
+            }
+
+            padding-bottom: 90px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: 390px;
+            grid-column-gap: 30px;
+
+            > div {
+                position: relative;
+
+                > div {
+                    &:nth-child(1) {
+                        height: 300px;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        text-align: center;
+                        box-sizing: border-box;
+                        padding: 20px 0px;
+                        background: $colorred;
+                        opacity: 0;
+                        left: 0px;
+                        top: 300px;
+                        width: 100%;
+                        transition: all .5s ease;
+
+                        a {
+                            text-decoration: none;
+
+                            i {
+                                margin-right: 20px;
+                                font-size: 1.3em;
+                                color: white;
+                            }
+
+                            &:hover {
+                                i {
+                                    color: #29293a;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        background-color: #f3f3f9;
+                        position: absolute;
+                        padding: 20px 0px;
+                        width: 100%;
+                        top: 300px;
+                        height: 88px;
+                        box-sizing: border-box;
+                        text-align: left;
+
+
+                        a {
+                            color: $colorred;
+                            font-size: 1.2em;
+                            text-decoration: none;
+                            font-weight: bold;
+                            transition: all .5s ease;
+
+                            &:hover {
+                                color: #29293a;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    > div {
+                        &:nth-child(2) {
+                            opacity: 0.7;
+                            top: 240px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button {
+            position: relative;
+            width: 255px;
+            height: 60px;
+            left: 500px;
+            top: 65px;
+
+            button {
+                position: absolute;
+                left: 0px;
+                width: 255px;
+                height: 60px;
+                border: 0px;
+                background: $colorred;
+                color: white;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.2em;
+                transition: all .5s ease;
+            }
+
+            > div {
+                &:nth-child(1) {
+                    position: absolute;
+                    border-bottom: 3px solid $colorred;
+                    left: 0px;
+                    width: 0%;
+                    transition: all .5s ease;
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    border-bottom: 3px solid #db1212;
+                    right: 0px;
+                    width: 0%;
+                    top: 57px;
+                    transition: all .5s ease;
+                }
+            }
+
+            &:hover {
+                button {
+                    background: transparent;
+                    color: $colorred;
+                }
+
+                > div {
+                    &:nth-child(1) {
+                        width: 100%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .photo {
+        position: relative;
+        top: 198px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: 238px;
+
+        > div {
+            position: relative;
+
+            > div {
+
+                &:nth-child(1) {
+                    position: absolute;
+                    overflow: hidden;
+                    height: 238px;
+
+                    img {
+                        transition: all .5s ease;
+                        transform: scale(1.1);
+                        height: 100%;
+                        width: 100%
+                    }
+                }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: all .5s ease;
+                    background: $colorred;
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: all .5s ease;
+                    opacity: 0;
+
+                    > div {
+
+                        &:nth-child(1) {
+                            position: absolute;
+                            left: 100px;
+                            transition: all .3s ease;
+
+                            h1 {
+                                color: white;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            top: 56px;
+                            position: absolute;
+                            width: 207px;
+                            left: 100px;
+                            transition: all .5s ease;
+
+                            p {
+                                color: white;
+                                font-size: 0.8em;
+                                line-height: 23px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            position: absolute;
+                            top: 196px;
+                            left: 296px;
+                            transition: all .3s ease;
+
+                            a {
+                                i {
+                                    font-size: 1.8em;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                > div {
+                    &:nth-child(1) {
+                        img {
+                            transform: scale(1);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0.6;
+                    }
+
+                    &:nth-child(3) {
+                        opacity: 1;
+
+                        > div {
+
+                            &:nth-child(1) {
+                                left: 34px
+                            }
+
+                            &:nth-child(2) {
+                                left: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 480px;
+        top: 197px;
+        box-sizing: border-box;
+
+        > div {
+
+            &:nth-child(1) {
+            }
+
+            &:nth-child(2) {
+                border: none;
+                box-sizing: border-box;
+                padding-left: 110px;
+                padding-top: 130px;
+                color: #29293a;
+                background: white;
+
+                > div {
+                    border: none;
+                    &:nth-child(1) {
+                        h1 {
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin: 15px 0px;
+
+                        i {
+                            font-size: 20px;
+                            margin-right: 13px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: 0.95em;
+                            color: #29293a;
+                            transition: all .5s ease;
+
+                            &:hover {
+                                color: $colorred;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        margin-bottom: 15px;
+
+                        i {
+                            font-size: 20px;
+                            margin-right: 13px;
+                            margin-left: 2px;
+                        }
+
+                        a {
+                            font-size: 20px;
+                            margin-right: 13px;
+                            color: #29293a;
+                            font-size: 0.95em;
+                            transition: all .5s ease;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: $colorred;
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        margin-bottom: 25px;
+
+                        i {
+                            font-size: 15px;
+                            margin-right: 13px;
+                        }
+
+                        a {
+                            font-size: 20px;
+                            margin-right: 13px;
+                            color: $colorred;
+                            font-size: 0.95em;
+                            text-decoration: none;
+                            transition: all .5s ease;
+
+                            &:hover {
+                                color: #29293a;
+                            }
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        a {
+                            i {
+                                font-size: 22px;
+                                color: #aeb1be;
+                                transition: all .5s ease;
+                            }
+
+                            &:hover {
+                                i {
+                                    color: #29293a;
+                                }
+                            }
+
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

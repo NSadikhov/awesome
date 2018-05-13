@@ -1,0 +1,50 @@
+#top-num {
+	background: #f3f3f9;
+	height: 60px;
+
+	.container {
+		> div {
+			box-sizing: border-box;
+			padding: 18px 0px;
+			float: left;
+			margin-right: 90px;
+			color: #363647;
+			font-family: $fontfamily;
+
+			i {
+				color: #b0b3c0;
+				font-size: 1.2em;
+				margin-right: 10px;
+			}
+			span{
+				cursor: pointer;
+				color: #b0b3c0;
+				&:hover{
+					color: #db1212;
+				}
+			}
+			&:nth-child(4){
+				cursor: pointer;
+				height:100%;
+				width:9%;
+				float:right;
+				color:white;
+				margin-right:0px;
+				text-align:center;
+				background:#db1212;
+				i{
+					color: white;
+					margin-right:7px;
+					font-size:1.3em;
+				}
+				span{
+					color: white;
+					font-weight: bold;
+				}
+				&:hover{
+					background: #3b2736;
+				}
+			}
+		}
+	}
+}

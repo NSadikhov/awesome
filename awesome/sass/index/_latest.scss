@@ -1,0 +1,162 @@
+#latest {
+	font-family: $fontfamily;
+	color: #29293a;
+	background: #f3f3f9;
+
+	.container {
+		text-align: center;
+
+		.header {
+			h1 {
+				margin: 0px;
+				font-size: 3em;
+			}
+		}
+
+		.box {
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-auto-rows: 640px;
+			grid-gap: 30px;
+
+			> div {
+				position: relative;
+
+				> div {
+
+					&:nth-child(1) {
+						overflow: hidden;
+						height: 330px;
+
+
+						img {
+							height: 100%;
+							transform: scale(1.1);
+							transition: all .5s ease;
+						}
+					}
+
+					&:nth-child(2) {
+						span {
+							position: absolute;
+							background: $colorred;
+							padding: 4px 8px;
+							left: 29px;
+							top: 316px;
+							color: white;
+							font-weight: bold;
+							font-size: 0.9em;
+						}
+					}
+
+					&:nth-child(3) {
+						margin-top: 37px;
+						text-align: left;
+						padding: 0px 29px;
+
+						a {
+							color: #29293a;
+							font-size: 1.6em;
+							text-decoration: none;
+							font-weight: bold;
+							transition: all .5s ease;
+
+							&:hover {
+								color: $colorred;
+							}
+						}
+					}
+
+					&:nth-child(4) {
+						margin-top: 24px;
+						padding: 0px 29px;
+						text-align: left;
+
+						p {
+							line-height: 30px;
+						}
+					}
+
+					&:nth-child(5) {
+						text-align: left;
+						padding: 0px 29px;
+						margin-top: 50px;
+
+						i {
+							margin-right: 9px;
+						}
+					}
+				}
+
+				&:hover {
+					> div {
+						&:nth-child(1) {
+							img {
+								transform: scale(1);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.button {
+			position: relative;
+			width: 285px;
+			height: 60px;
+			left: 500px;
+			padding: 65px 0px 135px 0px;
+
+			button {
+				position: absolute;
+				left: 0px;
+				width: 285px;
+				height: 60px;
+				border: 0px;
+				background: $colorred;
+				color: white;
+				cursor: pointer;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.2em;
+				transition: all .5s ease;
+			}
+
+			> div {
+				&:nth-child(1) {
+					position: absolute;
+					border-bottom: 3px solid $colorred;
+					left: 0px;
+					width: 0%;
+					transition: all .5s ease;
+				}
+
+				&:nth-child(3) {
+					position: absolute;
+					border-bottom: 3px solid #db1212;
+					right: 0px;
+					width: 0%;
+					top: 122px;
+					transition: all .5s ease;
+				}
+			}
+
+			&:hover {
+				button {
+					background: transparent;
+					color: $colorred;
+				}
+
+				> div {
+					&:nth-child(1) {
+						width: 100%;
+					}
+
+					&:nth-child(3) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

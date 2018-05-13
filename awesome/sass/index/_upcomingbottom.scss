@@ -1,0 +1,46 @@
+#upcoming-down {
+	height: 410px;
+	background: url(../images/upcoming4.jpg);
+	background-size: cover;
+	opacity: 0.7;
+	font-family: $fontfamily;
+	.back-color{
+		height: 100%;
+		background: rgba(43, 59, 87, 0.5);
+		.container {
+		
+		
+		.box {
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			grid-auto-rows: 225px;
+			grid-gap: 30px;
+			position: relative;
+			top: 95px;
+
+			> div {
+				text-align: center;
+				padding: 0px 24px;
+
+				i {
+					color: #7b7f8e;
+					font-size: 36px;
+				}
+
+				h1 {
+					color: white;
+					font-size: 54px;
+					margin: 25px 0px;
+				}
+
+				span {
+					color: white;
+					font-weight: bold;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+	}
+	
+}

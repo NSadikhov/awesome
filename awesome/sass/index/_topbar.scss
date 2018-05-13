@@ -1,0 +1,84 @@
+#top-bar {
+    margin: 24px 0px;
+    height: 82px;
+    box-sizing: border-box;
+    padding: 15px 0px;
+
+    .container {
+        position: relative;
+
+        .navbar-bar {
+            float: left;
+            position: absolute;
+            left: 0px;
+        }
+
+        .navbar-nav {
+            float: right;
+            line-height: 3;
+            font-family: $fontfamily;
+            position: relative;
+
+            .ul-1 {
+                margin: 0px;
+                list-style: none;
+
+                .li-1 {
+                    float: left;
+                    text-decoration: none;
+                    margin-left: 35px;
+
+                    a {
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: #29293a;
+
+                        i {
+                            margin-left: 5px;
+                            transition: all .3s ease;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        a {
+                            color: $colorred;
+                        }
+                    }
+
+                    &:hover {
+                        ul {
+                            z-index: 1;
+                            top: 60px;
+                        }
+
+                        a {
+                            color: $colorred;
+                        }
+
+                        i {
+                            color: $colorred;
+                            transform: rotate(180deg);
+                        }
+
+                        &:nth-child(8) {
+
+                            i {
+                                color: $colorred;
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .close1 {
+            position: absolute;
+            background: white;
+            width: 64%;
+            right: -7px;
+            height: 48px;
+            top: 60px;
+        }
+    }
+}

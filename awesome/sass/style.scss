@@ -1,0 +1,27 @@
+$fontfamily:'Calibri';
+$colorred: #db1212;
+*{
+	transition: all .3s linear;
+}
+body{
+	margin:0px;
+}
+
+.container{
+	width:95%;
+	margin:0px auto;
+}
+.clear{
+	clear:both;
+}
+@import "index/toppart.scss";
+@import "index/topbar.scss";
+@import "index/awesome-part.scss";
+@import "index/upcoming-events.scss";
+@import "index/upcomingbottom.scss";
+@import "index/about.scss";
+@import "index/shop.scss";
+@import "index/latest.scss";
+@import "index/subscribe.scss";
+@import "index/instructorindex.scss";
+@import "index/finish-part.scss";
